@@ -1,1 +1,309 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Type WTF</title>
+	<style type="text/css" media="screen">
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0 | 20110126
+		   License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+/*///////////////////////////////////////////////*/
+@media (min-width: 721px) {
+
+	.container {
+		position: relative;
+		height: 100vh;
+		background-color: #FFA89A;
+		padding: 0px 20px 0px 20px;
+
+		display: -webkit-flex;
+    	display: flex;
+
+    	-webkit-flex-direction: column;
+   		flex-direction: column;
+	}
+	#top {
+		flex: 1 1 1040px;
+
+		margin: auto;
+		max-width: 1080px;
+		border: 1px solid rgba(255,255,255, 0.3);
+
+
+		display: -webkit-flex;
+    	display: flex;
+    	-webkit-align-items: center;
+    	align-items: center;
+
+    	z-index: 3;
+
+    	pointer-events: none;
+	}
+	#top h1 {
+		font-family: FreightBigProBold-Regular;
+		font-size: 144px;
+		color: #FFFFFF;
+		letter-spacing: -1.53px;
+		line-height: 144px;
+
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	#bottom {
+		background-color: #FFFFFF;
+		/*flex: 1 1 1040px;*/
+		height: 128px;
+		margin: auto;
+		max-width: 1080px;
+
+		display: -webkit-flex;
+    	display: flex;
+    	-webkit-align-items: center;
+    	align-items: center;
+
+    	z-index: 2;
+	}
+	#bottom p {
+		font-family: FreightSansProMedium-Regular;
+		font-size: 24px;
+		color: #000000;
+		letter-spacing: -0.26px;
+		line-height: 40px;
+
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.bg-columns {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		max-width: 1040px;
+
+		-webkit-display: flex; 
+		display: flex;
+
+		-webkit-flex-direction: row;
+   		flex-direction: row;
+
+   		-webkit-justify-content: space-around;
+    	justify-content: space-around;
+
+    	flex-wrap: nowrap;
+    	height: 100vh;
+
+    	z-index: 1;
+	}
+	.column {
+		border: 1px solid rgba(255,255,255, 0.3);
+		flex: 1 1 160px;
+		margin: 0px 20px 0px 20px;
+		-webkit-transition: .2s, background-color .2s, -webkit-transform .2s;
+    	transition: .2s, background-color .2s, transform .2s;
+	}
+	.column:hover {
+		background-color: rgba(255,255,255, 0.15);
+	}
+
+}
+
+
+@media (max-width: 720px) {
+
+	.container {
+		position: relative;
+		height: 100vh;
+		background-color: #FFA89A;
+		padding: 0px 20px 0px 20px;
+
+		display: -webkit-flex;
+    	display: flex;
+
+    	-webkit-flex-direction: column;
+   		flex-direction: column;
+	}
+	#top {
+		flex: 1 1 1040px;
+
+		margin: auto;
+		max-width: 1080px;
+		border: 1px solid rgba(255,255,255, 0.3);
+
+
+		display: -webkit-flex;
+    	display: flex;
+    	-webkit-align-items: center;
+    	align-items: center;
+
+    	z-index: 3;
+
+    	pointer-events: none;
+	}
+	#top h1 {
+		font-family: FreightBigProBold-Regular;
+		font-size: 56px;
+		color: #FFFFFF;
+		line-height: 56px;
+
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	#bottom {
+		background-color: #FFFFFF;
+		/*flex: 1 1 1040px;*/
+		height: 128px;
+		margin: auto;
+		max-width: 1080px;
+
+		display: -webkit-flex;
+    	display: flex;
+    	-webkit-align-items: center;
+    	align-items: center;
+
+    	z-index: 2;
+	}
+	#bottom p {
+		font-family: FreightSansProMedium-Regular;
+		font-size: 16px;
+		color: #000000;
+		letter-spacing: -0.26px;
+		line-height: 40px;
+
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.bg-columns {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		max-width: 1040px;
+
+		-webkit-display: flex; 
+		display: flex;
+
+		-webkit-flex-direction: row;
+   		flex-direction: row;
+
+   		-webkit-justify-content: space-around;
+    	justify-content: space-around;
+
+    	flex-wrap: nowrap;
+    	height: 100vh;
+
+    	z-index: 1;
+	}
+	.column:nth-child(1),
+	.column:nth-child(2),
+	.column:nth-child(3),
+	.column:nth-child(4){
+		display: none;
+	}
+	.column {
+		border: 1px solid rgba(255,255,255, 0.3);
+		flex: 1 1 160px;
+		margin: 0px 20px 0px 20px;
+		-webkit-transition: .2s, background-color .2s, -webkit-transform .2s;
+    	transition: .2s, background-color .2s, transform .2s;
+	}
+	.column:hover {
+		background-color: rgba(255,255,255, 0.15);
+	}
+
+}
+	.color-hl {
+		color: #2403D8;
+	}
+
+	a {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #2403D8;
+	}
+	a:hover {
+
+	}
+	a:active {
+		text-decoration: none;
+		color: #2403D8;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="top">
+			<h1><span class="color-hl">type.wtf</span> is bout to get lit.</h1>
+		</div>
+
+		<div id="bottom">
+			<p>A project by <a href="twitter.com/mitchbernstein">Mitchell Bernstein</a></p>
+		</div>
+
+		<div class="bg-columns">
+			<div class="column"></div>
+			<div class="column"></div>
+			<div class="column"></div>
+			<div class="column"></div>
+			<div class="column"></div>
+			<div class="column"></div>
+			<div class="column"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>
